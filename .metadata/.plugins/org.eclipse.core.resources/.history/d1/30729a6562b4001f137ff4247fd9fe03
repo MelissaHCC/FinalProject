@@ -1,0 +1,14 @@
+package com.hccs.shopping.controllers;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ProductRestContollerTest {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

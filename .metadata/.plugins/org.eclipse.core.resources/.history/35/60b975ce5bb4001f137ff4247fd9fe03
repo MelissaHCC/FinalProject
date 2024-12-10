@@ -1,0 +1,10 @@
+package com.hccs.shopping;
+
+// Traditional three-layer architecture for Java apps:
+// - Presentation Layer (controllers and views)
+// - Service Layer (business logic and transaction boundaries)
+// - Persistence Layer (convert entities to table rows and back)
+
+public class ProductService {
+	
+}

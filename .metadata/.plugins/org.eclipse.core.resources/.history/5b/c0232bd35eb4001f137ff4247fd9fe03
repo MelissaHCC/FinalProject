@@ -1,0 +1,16 @@
+package com.hccs.shopping.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.hccs.shopping.services.ProductService;
+
+@RestController
+public class ProductRestContoller {
+	
+	private final ProductService service;
+	
+	public ProductRestContoller(ProductService service) {
+		this.service = service;
+	}
+
+}

@@ -1,0 +1,536 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html ng-app="module1">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Applight Template By W3 Template</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<!-- Font Google -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<script src="js/script.js"></script> 
+</head>
+
+<body ng-controller="myController">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container"> <a class="navbar-brand navbar-logo" href="#"> <img src="images/logo.png" alt="logo" class="logo-1"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">About</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Features</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Team</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Testimonials</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5">Faq</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">Contact</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="7">Items-Available</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar --> 
+<!-------Banner Start------->
+<section class="banner" data-scroll-index='0'>
+  <div class="banner-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="banner-text">
+            <div>
+              <label>Organization Name:</label>
+              <input type="text" ng-model="organization" placeholder="Enter organization name here">
+              <hr>
+              <h1 class="white">Welcome to the Silent Auction for {{ organization }}</h1>
+              <h6 class="white">This service was designed by <a href="https://rosecustomplanners.com/" target="_blank" rel="dofollow" class="weblink">Rose Custom Planners</a>.</h6>
+              <p class="banner-text white">{{ organization }} {{ welcomeMessage }} {{ organization }}!!</p>
+            </div>
+            <!--<ul>
+              <li><a href="#"><img src="images/appstore.png" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
+              <li><a href="#"><img src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s"/></a></li>
+            </ul>
+            <p class="banner-text white">(Note these links don't work yet)</p>-->
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12"> <img src="images/iphone-screen.png" class="img-fluid wow fadeInUp"/> </div>
+      </div>
+    </div>
+  </div>
+  <span class="svg-wave"> <img class="svg-hero" src="images/applight-wave.svg"> </span> </section>
+
+<!-------Banner End-------> 
+
+<!-------Current Silent Auctions Start------->
+<section class="current-auctions section-padding" data-scroll-index="7">
+  <div class="container text-center">
+    <h3>Current Silent Auction Items</h3>
+    <span class="line"></span>
+    <p>Browse our ongoing auctions and place your bids to support various causes and items.</p>
+    
+    <div class="row">
+      <!-- Auction 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="auction-item card">
+          <img src="images/auction1.jpg" class="card-img-top" alt="Auction Item 1">
+          <div class="card-body">
+            <h5 class="card-title">Mixed Alcohol Basket</h5>
+            <p class="card-text">Indulge in this exclusive assortment of fine wines and premium spirits, handpicked to elevate your gatherings and celebrations. Whether you're a connoisseur or looking for a gift, this collection offers a taste of luxury.</p>
+            <a href="#" class="btn btn-primary">View Details & Bid</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Auction 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="auction-item card">
+          <img src="images/auction2.jpg" class="card-img-top" alt="Auction Item 2">
+          <div class="card-body">
+            <h5 class="card-title">Pearl Necklace</h5>
+            <p class="card-text">Elegant and timeless, this classic pearl necklace adds a touch of sophistication to any outfit. Carefully crafted with lustrous pearls, it’s the perfect addition to any jewelry collection, symbolizing grace and beauty.</p>
+            <a href="#" class="btn btn-primary">View Details & Bid</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Auction 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="auction-item card">
+          <img src="images/auction3.jpg" class="card-img-top" alt="Auction Item 3">
+          <div class="card-body">
+            <h5 class="card-title">Baking Kit Basket</h5>
+            <p class="card-text">Everything you need to create delicious treats at home! This deluxe baking set includes high-quality pans, measuring tools, and decorating accessories, ideal for bakers of all skill levels who love crafting sweet creations.</p>
+            <a href="#" class="btn btn-primary">View Details & Bid</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-------Current Silent Auctions End------->
+
+<!-------About End------->
+
+<section class="about section-padding prelative" data-scroll-index='1'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="sectioner-header text-center">
+          <h3>About</h3>
+          <span class="line"></span>
+          <p>Our silent auction app, crafted by Rose Custom Planners, provides a seamless and intuitive experience for organizers and bidders, ensuring every event runs smoothly from start to finish.</p>
+        </div>
+        <div class="section-content text-center">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s"> <i class="fa fa-life-ring" aria-hidden="true"></i>
+                <h5>Support</h5>
+                <p>We’re here to help at every step, offering dedicated support to guide you through setup, bidding, and closing your auction successfully.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.4s"> <i class="fa fa-mobile" aria-hidden="true"></i>
+                <h5>Cross Platform</h5>
+                <p>Accessible on any device, our app allows you to manage and participate in auctions from smartphones, tablets, and desktops.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.6s"> <i class="fa fa-bolt" aria-hidden="true"></i>
+                <h5>Fast</h5>
+                <p>With quick, responsive features, our app ensures fast bidding and real-time updates, keeping your auction lively and engaging.</p>
+              </div>
+            </div>
+          </div>
+          <!--<a href="#" class="about-btn">Learn More</a> -->
+          <a href="https://rosecustomplanners.com/" target="_blank" rel="dofollow" class="about-btn">Rose Custom Planners</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-------About End-------> 
+
+<!-------Video Start------->
+<section class="video-section prelative text-center white">
+  <div class="section-padding video-overlay">
+    <div class="container">
+      <h3>Watch Now</h3>
+      <p>This is a video for downloading my Chrome Extension.<br> Can be replaced with a video of the app down the road when I create it.</p>
+      <!--
+      <i class="fa fa-play" id="video-icon" aria-hidden="true"></i>
+      <div class="video-popup">
+        <div class="video-src">
+        -->
+          <video class="iframe-src" autoplay muted loop controls width="100%">
+            <source src="images/Chrome-Extension.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-------Video End------->
+
+
+<!-------Features Start------->
+<section class="feature section-padding" data-scroll-index='2'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="sectioner-header text-center">
+          <h3>Features</h3>
+          <span class="line"></span>
+          <p>Our app is built to streamline every step of your auction process, from setup to final bids, ensuring a smooth and enjoyable experience for all participants.</p>
+        </div>
+        <div class="section-content text-center">
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
+                <div class="media-body text-right media-right-margin">
+                  <h5>Fast Bidding</h5>
+                  <p>With quick, responsive bidding, users can place bids in seconds, making auctions more exciting and efficient.</p>
+                </div>
+                <div class="media-right icon-border"> <span class="fa fa-bolt" aria-hidden="true"></span> </div>
+              </div>
+              <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                <div class="media-body text-right media-right-margin">
+                  <h5>Low Data Consumption</h5>
+                  <p>Designed to minimize data usage, our app keeps your auction running smoothly without excessive data requirements.</p>
+                </div>
+                <div class="media-right icon-border"> <span class="fa fa-battery-full" aria-hidden="true"></span> </div>
+              </div>
+              <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
+                <div class="media-body text-right media-right-margin">
+                  <h5>Wifi Compatibility</h5>
+                  <p>Fully compatible with Wi-Fi for seamless access, allowing bidders to participate easily from any internet-enabled location.</p>
+                </div>
+                <div class="media-right icon-border"> <span class="fa fa-wifi" aria-hidden="true"></span> </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-none d-md-block d-lg-block">
+              <div class="feature-mobile"> <img src="images/iphone-screen-with-shadow.png" class="img-fluid wow fadeInUp"/> </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
+                <div class="media-left icon-border media-right-margin"> <span class="fa fa-check-double" aria-hidden="true"></span> </div>
+                <div class="media-body text-left">
+                  <h5>Regular Updates</h5>
+                  <p>Enjoy continuous improvements and new features with regular updates, keeping your auction experience at the cutting edge.</p>
+                </div>
+              </div>
+              <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                <div class="media-left icon-border media-right-margin"> <span class="fa fa-dollar-sign" aria-hidden="true"></span> </div>
+                <div class="media-body text-left">
+                  <h5>Cost-Effective</h5>
+                  <p>Our solution saves on traditional auction costs, making it an affordable and efficient choice for any event.</p>
+                </div>
+              </div>
+              <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
+                <div class="media-left icon-border media-right-margin"> <span class="fa fa-hdd" aria-hidden="true"></span> </div>
+                <div class="media-body text-left">
+                  <h5>Ample Storage</h5>
+                  <p>Store all your auction data, including bid history and participant details, securely and without limitations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-------Features End-------> 
+
+<!-------Team Start------->
+<section class="team section-padding" data-scroll-index='3'>
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="sectioner-header text-center">
+          <h3>Meet Our Team</h3>
+          <span class="line"></span>
+          <p>We are passionate about creating the best silent auction experience with seamless technology and dedicated support.</p>
+        </div>
+        <div class="section-content text-center">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="team-detail wow bounce" data-wow-delay="0.2s"> 
+                <img src="images/user4.jpg" class="img-fluid"/>
+                <h4>Melissa Auman</h4>
+                <p>Founder & Developer</p>
+                <p>Melissa founded Rose Custom Planners to support Catholic planners with faith-centered, practical tools. 
+                  After several years of organizing silent auctions at her church, she recognized the need for an easier 
+                  solution and developed this app to help other communities manage silent auctions smoothly and effectively.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------Team End-------> 
+
+<!-------Testimonial Start------->
+<section class="testimonial section-padding" data-scroll-index='4'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="sectioner-header text-center white">
+          <h3>Testimonials</h3>
+          <span class="line"></span>
+          <p class="white">Here’s what people are saying about our silent auction app!</p>
+        </div>
+    
+      <div class="section-content">
+        <div class="row">
+          <div class="offset-md-2 col-md-8 col-sm-12">
+            <div class="slider">
+              <div class="slider-item">
+                <div class="test-img"><img src="images/user1.jpg" alt="Placeholder" width="157" height="157"></div>
+                <div class="test-text"><span class="title"><span>Jessica Lang</span> Fundraising Coordinator</span>This app made running our silent auction a breeze! We raised more funds with less hassle.</div>
+              </div>
+              <div class="slider-item">
+                <div class="test-img"><img src="images/user2.jpg" alt="Placeholder" width="157" height="157"></div>
+                <div class="test-text"><span class="title"><span>Steve Smith</span> App User</span>The intuitive design and easy setup saved us so much time. Our volunteers loved it!</div>
+              </div>
+              <div class="slider-item">
+                <div class="test-img"><img src="images/user3.jpg" alt="Placeholder" width="157" height="157"></div>
+                <div class="test-text"><span class="title"><span>Gordon Shaw</span> Community Outreach Director</span>A well-thought-out solution for any event team. Highly recommend for simplifying silent auctions!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------Testimonial End-------> 
+
+<!-------FAQ Start------->
+<section class="faq section-padding prelative" data-scroll-index='5'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="sectioner-header text-center">
+          <h3>Frequently Asked Questions</h3>
+          <span class="line"></span>
+          
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+              <h4>What is the Rose Custom Planners Silent Auction App?</h4>
+              <p>The Rose Custom Planners Silent Auction App is a streamlined digital tool that helps organizations efficiently manage and run silent auctions, enhancing bidder engagement and simplifying auction management.</p>
+            </div>
+            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+              <h4>Is the app easy to use for non-technical users?</h4>
+              <p>Absolutely! The app is designed to be user-friendly with clear instructions, making it accessible for all experience levels.</p>
+            </div>
+            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
+              <h4>Can the app be customized for different events?</h4>
+              <p>Yes, our app offers flexible options so you can customize the experience to match your event's unique needs and branding.</p>
+            </div>
+            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
+              <h4>What support is available if I have questions?</h4>
+              <p>Our support team is ready to assist you with setup and troubleshooting, ensuring your silent auction runs smoothly.</p>
+            </div>
+            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
+              <h4>Is it secure for handling payments and bids?</h4>
+              <p>Security is our priority. The app is built with secure features to protect bidder data and payment information throughout the auction process.</p>
+            </div>
+            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
+              <h4>How do I get started?</h4>
+              <p>Simply reach out to us through our contact page to set up your account and get started!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------FAQ End-------> 
+
+<!-------Contact Start------->
+<section class="contact section-padding" data-scroll-index='6'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="sectioner-header text-center">
+          <h3>Contact us</h3>
+          <span class="line"></span>
+          <p>Have questions or need assistance with the silent auction app? Our team is here to help! Whether you’re setting up an event or need support with features, feel free to reach out. We look forward to helping make your auction experience a success!</p>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8">
+              <form id="contact_form" action="">
+                <div class="row">
+                  <div class="col">
+                    <input type="text" id="your_name" class="form-input w-100" name="full-name" placeholder="Full Name" required>
+                  </div>
+                  <div class="col">
+                    <input type="email" id="email" class="form-input w-100" name="email" placeholder="Email" required>
+                  </div>
+                </div>
+                <input type="text" id="subject" class="form-input w-100" name="subject" placeholder="Subject">
+                <textarea class="form-input w-100" id="message" placeholder="Message" name="message"></textarea>
+                <button class="btn-grad w-100 text-uppercase" type="submit" name="button">submit</button>
+              </form>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <div class="contact-info white">
+                <div class="contact-item media"> <i class="fa fa-map-marker-alt media-left media-right-margin"></i>
+                  <div class="media-body">
+                    <p class="text-uppercase">Address</p>
+                    <p class="text-uppercase">Houston, TX</p>
+                  </div>
+                </div>
+                <div class="contact-item media"> <i class="fa fa-mobile media-left media-right-margin"></i>
+                  <div class="media-body">
+                    <p class="text-uppercase">Phone</p>
+                    <p class="text-uppercase"><a class="text-white" href="tel:+15173977100">009900990099</a> </p>
+                  </div>
+                </div>
+                <div class="contact-item media"> <i class="fa fa-envelope media-left media-right-margin"></i>
+                  <div class="media-body">
+                    <p class="text-uppercase">E-mail</p>
+                    <p class="text-uppercase"><a class="text-white" href="mailto:abcdefg@gmail.com">RoseCustomPlanners@gmail.com</a> </p>
+                  </div>
+                </div>
+                <div class="contact-item media"> <i class="fa fa-clock media-left media-right-margin"></i>
+                  <div class="media-body">
+                    <p class="text-uppercase">Working Hours</p>
+                    <p class="text-uppercase">Mon-Fri 9.00 AM to 5.00PM.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------Contact End-------> 
+
+<!-------Download End------->
+<section class="download section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="sectioner-header text-center white">
+          <h3>Download Our App</h3>
+          <span class="line"></span>
+          <p class="white">Easily access and manage your silent auctions on the go! Download our app for quick setup, real-time updates, and seamless bidding from anywhere. Start enhancing your auction experience today!</p>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="section-content text-center">
+          <ul>
+            <li><a href="#"><img src="images/appstore.png" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
+            <li><a href="#"><img src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s"/></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------Download End------->
+
+<footer class="footer-copy">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <p>2018 &copy; Rose Custom Planners. Website Designed by <a href="http://w3Template.com" target="_blank" rel="dofollow">W3 Template</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
+<!-- scrollIt js --> 
+<script src="js/scrollIt.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script>
+	wow = new WOW();
+	wow.init();
+$(document).ready(function(e) {
+
+	$('#video-icon').on('click',function(e){
+	e.preventDefault();
+	$('.video-popup').css('display','flex');
+	$('.iframe-src').slideDown();
+	});
+	$('.video-popup').on('click',function(e){
+	var $target = e.target.nodeName;
+	var video_src = $(this).find('iframe').attr('src');
+	if($target != 'IFRAME'){
+	$('.video-popup').fadeOut();
+	$('.iframe-src').slideUp();
+	$('.video-popup iframe').attr('src'," ");
+	$('.video-popup iframe').attr('src',video_src);
+	}
+	});
+
+	$('.slider').bxSlider({
+	pager: false
+	});
+});
+    
+$(window).on("scroll",function () {
+
+	var bodyScroll = $(window).scrollTop(),
+	navbar = $(".navbar");
+	
+	if(bodyScroll > 50){
+	$('.navbar-logo img').attr('src','images/logo-black.png');
+	navbar.addClass("nav-scroll");
+
+}else{
+	$('.navbar-logo img').attr('src','images/logo.png');
+	navbar.removeClass("nav-scroll");
+}
+
+});
+$(window).on("load",function (){
+	var bodyScroll = $(window).scrollTop(),
+	navbar = $(".navbar");
+	
+	if(bodyScroll > 50){
+	$('.navbar-logo img').attr('src','images/logo-black.png');
+	navbar.addClass("nav-scroll");
+	}else{
+	$('.navbar-logo img').attr('src','images/logo-white.png');
+	navbar.removeClass("nav-scroll");
+	}
+
+	$.scrollIt({
+	
+	easing: 'swing',      // the easing function for animation
+	scrollTime: 900,       // how long (in ms) the animation takes
+	activeClass: 'active', // class given to the active nav element
+	onPageChange: null,    // function(pageIndex) that is called when page is changed
+	topOffset: -63
+	});
+});
+
+</script>
+</body>
+</html>

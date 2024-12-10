@@ -1,0 +1,5 @@
+package com.hccs.shopping.dao;
+
+public interface ProductRepository {
+
+}
